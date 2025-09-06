@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+- story: greeting flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: symptom check after greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: symptom_check
+  - action: utter_symptom_check
+  - intent: find_help
+  - action: utter_find_help
+
+- story: direct symptom report
+  steps:
+  - intent: symptom_check
+  - action: utter_symptom_check
+
+- story: find help after symptoms
+  steps:
+  - intent: symptom_check
+  - action: utter_symptom_check
+  - intent: find_help
+  - action: utter_find_help
+
+- story: medication inquiry
+  steps:
+  - intent: medication_query
+  - action: utter_medication_query
+
+- story: emergency flow
+  steps:
+  - intent: medical_emergency
+  - action: utter_emergency
+
+- story: goodbye flow
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask for help directly
+  steps:
+  - intent: find_help
+  - action: utter_find_help

@@ -1,0 +1,118 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - what's up
+    - how are you
+    - greetings
+    - hi there
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - good bye
+    - see you around
+    - see you later
+    - bye
+    - bye bye
+    - have a nice day
+    - cya
+    - see you
+    - stop
+    - end
+    - that's all
+    - thanks bye
+
+- intent: medical_emergency
+  examples: |
+    - chest pain
+    - I have chest pain
+    - shortness of breath
+    - I can't breathe
+    - difficulty breathing
+    - severe bleeding
+    - I'm choking
+    - fainted
+    - sudden dizziness
+    - severe burn
+    - call an ambulance
+    - it's an emergency
+    - help me I'm having a heart attack
+    - broken bone
+    - heart attack
+    - stroke symptoms
+    - unconscious
+    - heavy bleeding
+
+- intent: symptom_check
+  examples: |
+    - I have a headache
+    - I've had a fever for 2 days
+    - My stomach hurts
+    - I have a sore throat and cough
+    - I feel nauseous
+    - I have diarrhea
+    - I think I have a cold
+    - I have body aches
+    - I have a rash on my arm
+    - I'm feeling dizzy
+    - What should I do for a headache?
+    - I have a cough
+    - I feel sick
+    - I'm not feeling well
+    - I have pain in my back
+    - I have a fever
+    - I feel tired all the time
+    - I have allergy symptoms
+
+- intent: find_help
+  examples: |
+    - find a hospital
+    - where is the nearest clinic?
+    - I need to find a doctor
+    - pharmacy near me
+    - hospital nearby
+    - locate a clinic
+    - show me urgent care locations
+    - find me a doctor
+    - where can I get medical help?
+    - need a doctor
+    - where's the closest pharmacy?
+    - find emergency room
+    - I need medical attention
+    - where to go for help
+
+- intent: medication_query
+  examples: |
+    - what is ibuprofen used for?
+    - side effects of aspirin
+    - how often can I take paracetamol?
+    - can I take ibuprofen with alcohol?
+    - what is the dosage for amoxicillin?
+    - I forgot to take my medicine
+    - interaction between med1 and med2
+    - what does this medication do?
+    - when should I take this medicine?
+    - can I take two medicines together?
+    - medication side effects
+    - prescription information
+
+- intent: nlu_fallback
+  examples: |
+    - what
+    - huh
+    - I don't understand
+    - can you repeat that
+    - say that again
+    - not sure what you mean
+    - explain
+    - what does that mean
+    - I'm confused
